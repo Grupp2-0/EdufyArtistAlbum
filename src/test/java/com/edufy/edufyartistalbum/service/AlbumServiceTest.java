@@ -24,7 +24,7 @@ class AlbumServiceTest {
     @Test
     void getAlbumForOneArtistTest(){
         List<AlbumArtist> list = new ArrayList<>();
-        Artist artist = new Artist(1, "Magnus Uggla");
+        Artist artist = new Artist(1, "Test Artist");
         AlbumArtist albumArtist = new AlbumArtist(1, albumMock, artist);
         list.add(albumArtist);
         Mockito.when(albumArtistRepo.findAllByArtistArtistId(artist))
