@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping()
+@RequestMapping("/artistAlbum")
 public class AlbumController {
     @Autowired
     private AlbumService albumService;
@@ -20,7 +20,7 @@ public class AlbumController {
     *@params Id
     *@returns Id
     */
-    @GetMapping("/artistAlbum")
+    @GetMapping("/getArtistAlbum")
     public List<Album> getArtistAlbumById(int id) {
         return albumService.getAlbumById(id);
     }
